@@ -1,0 +1,83 @@
+.content-grid > * {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  margin: 0 10px;
+}
+
+.scroll-card {
+  width: 1000px;
+  height: 250px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Set a solid background color */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  scroll-snap-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add spacing between card and indicator */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.arrow {
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: #005f99;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+}
+
+.indicator-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #007acc; /* Set a solid color for active indicators */
+}
+
+body {
+  background-color: unset; /* Remove custom background color */
+}
