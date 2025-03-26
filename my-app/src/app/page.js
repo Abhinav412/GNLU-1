@@ -63,7 +63,7 @@ export default function Home() {
           {cards[currentIndex] === "PIL & AI" ? (
             <>
               <h1
-                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                className="text-xl font-normal text-blue-600 underline cursor-pointer" // Changed font to normal
                 onClick={() => router.push("/pil_ai")}
               >
                 {cards[currentIndex]}
