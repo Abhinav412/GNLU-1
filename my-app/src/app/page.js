@@ -34,6 +34,8 @@ export default function Home() {
   const handleCardClick = () => {
     if (cards[currentIndex] === "PIL & AI") {
       router.push("/pil_ai");
+    } else if (cards[currentIndex] === "PIL in Daily Life") {
+      router.push("/daily_life");
     }
   };
 
@@ -63,7 +65,7 @@ export default function Home() {
           {cards[currentIndex] === "PIL & AI" ? (
             <>
               <h1
-                className="text-xl font-normal text-blue-600 underline cursor-pointer" // Changed font to normal
+                className="text-xl font-bold text-blue-600 underline cursor-pointer"
                 onClick={() => router.push("/pil_ai")}
               >
                 {cards[currentIndex]}
@@ -73,9 +75,24 @@ export default function Home() {
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Artificial Intelligence (AI) transcends geographical boundaries, influencing individual lives and shaping societies worldwide. AI impacts a broad spectrum of activities, from determining credit scores and curating social media feeds to developing advanced weapons and influencing global information systems. Given these widespread applications, AI governance cannot be confined to corporate responsibility alone; it requires active participation from all states.
-
 AI governance is an inherently complex challenge that necessitates cooperation among diverse stakeholders with varying cultural, social, and political perspectives. Private enterprises, civil society organizations, academic institutions, and governments must collaborate to create effective governance frameworks. International law provides a well-established foundation upon which global AI governance can be built, offering a common language for legal and ethical discourse.`}
-                This card discusses the intersection of Public International Law and Artificial Intelligence.
+              </p>
+            </>
+          ) : cards[currentIndex] === "PIL in Daily Life" ? (
+            <>
+              <h1
+                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                onClick={() => router.push("/daily_life")}
+              >
+                {cards[currentIndex]}
+              </h1>
+              <p
+                className="text-black mt-2"
+                style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
+              >
+                {`Public International Law (PIL) permeates our daily lives in ways often overlooked. From the regulations governing international travel and commerce to the standards that ensure the safety of imported products, PIL establishes frameworks that directly impact individuals worldwide. These laws facilitate cross-border communication, protect intellectual property across national boundaries, and ensure basic human rights regardless of citizenship.
+
+When we use the internet, purchase goods manufactured abroad, or travel internationally, we encounter the practical applications of treaties, conventions, and customary international law. PIL also influences environmental regulations, labor standards, and health protocols that protect our communities. Understanding how these international legal frameworks shape our everyday experiences helps us appreciate the interconnected nature of our global society and the importance of international cooperation.`}
               </p>
             </>
           ) : (
