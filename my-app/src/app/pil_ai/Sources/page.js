@@ -12,12 +12,11 @@ const SourcesPage = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-            <div className="w-full p-4 bg-white bg-opacity-10 flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold">Sources</h1>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-300 via-purple-300 to-pink-300">
+            <div className="w-full p-4 flex justify-end items-center mb-6">
                 <button 
                     onClick={() => router.push('/pil_ai/')}
-                    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                    className="px-2 py-2 bg-indigo-700 text-white rounded hover:bg-indigo-800"
                 >
                     Back to Main
                 </button>
@@ -25,18 +24,18 @@ const SourcesPage = () => {
             
             {showBibliography && (
                 <>
-                    <h2 style={{ fontSize: '22px', marginBottom: '16px', fontWeight: 'bold' }}>Bibliography</h2>
-                    <div className="bibliography" style={{ 
-                        backgroundColor: '#ffffff', 
-                        padding: '20px', 
-                        borderRadius: '8px', 
-                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', 
-                        maxWidth: '600px',
-                        maxHeight: '60vh',
-                        overflowY: 'auto',
-                        fontSize: '14px'
+                    <h2 style={{ fontSize: '30px', marginBottom: '24px', fontWeight: 'bold', color: '#2d2b52' }}>Sources</h2>
+                    <div style={{ 
+                        width: '80%', 
+                        maxWidth: '800px',
+                        padding: '0 20px'
                     }}>
-                        <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <ul style={{ 
+                            listStyleType: 'none', 
+                            padding: 0,
+                            fontSize: '20px',
+                            color: '#2d2b52'
+                        }}>
                             <li style={{ marginBottom: '8px' }}>Source 1: INTERNATIONAL LAW AND ADVANCED AI: EXPLORING THE LEVERS FOR 'HARD' CONTROL - INSTITUTE FOR LAW & AI INSTITUTE FOR LAW & AI</li>
                             <li style={{ marginBottom: '8px' }}>Link: <a 
                                 href="https://law-ai.org/international-law-and-advanced-ai/" 

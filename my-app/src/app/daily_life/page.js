@@ -10,7 +10,7 @@ export default function DailyLife() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-blue-300 via-purple-300 to-pink-300">
       <h1 className="text-3xl font-bold mb-5 font-serif">
         Daily Life
       </h1>
