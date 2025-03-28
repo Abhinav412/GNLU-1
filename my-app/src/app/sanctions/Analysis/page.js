@@ -43,19 +43,16 @@ const Page = () => {
                             <a href="#section3" className="text-blue-500 hover:underline">Humanitarian and Economic Consequences</a>
                         </li>
                         <li>
-                            <a href="#section4" className="text-blue-500 hover:underline">Using Apps and Streaming Content Anywhere</a>
+                            <a href="#section4" className="text-blue-500 hover:underline">Enforcement and Evasion Mechanisms</a>
                         </li>
                         <li>
-                            <a href="#section5" className="text-blue-500 hover:underline">Watching Live Events From Anywhere</a>
+                            <a href="#section5" className="text-blue-500 hover:underline">Trade Wars and Economic Sanctions</a>
                         </li>
                         <li>
-                            <a href="#section6" className="text-blue-500 hover:underline">International Law and Global Health: Lessons from Covid-19</a>
+                            <a href="#section6" className="text-blue-500 hover:underline">Global Governance and Future Challenges</a>
                         </li>
                         <li>
-                            <a href="#section7" className="text-blue-500 hover:underline">Travel Made Easy</a>
-                        </li>
-                        <li>
-                            <a href="#section9" className="text-blue-500 hover:underline">Conclusion</a>
+                            <a href="#section7" className="text-blue-500 hover:underline">Conclusion</a>
                         </li>
                     </ul>
                 </aside>
@@ -73,20 +70,6 @@ const Page = () => {
                     <section id="section2" className="mb-8">
                         <h2 className="text-lg font-bold mb-4">Effectiveness and Compliance with International Law</h2>
                         <h3 className="text-md font-semibold mt-6 mb-2">Iran v. United States (2018)</h3>
-                        
-                        {/* YouTube Video Embed */}
-                        <div className="my-6">
-                            <h3 className="text-md font-semibold mb-3">Video Explainer: Economic Sanctions in International Law</h3>
-                            <div className="aspect-w-16 aspect-h-9">
-                                <YouTube
-                                    videoId="Iqvmcz7-e5w" // Replace with your actual YouTube video ID
-                                    opts={opts}
-                                    className="w-full"
-                                />
-                            </div>
-                            <p className="text-sm text-gray-600 mt-2">Video: Understanding how economic sanctions operate under international law</p>
-                        </div>
-                        
                         <div className="flex justify-center my-4">
                             <Image 
                                 src="/images/usa.png" 
@@ -102,125 +85,119 @@ const Page = () => {
                     <section id="section3" className="mb-8">
                         <h2 className="text-lg font-bold mb-4">Humanitarian and Economic Consequences</h2>
                         <h3 className="text-md font-semibold mt-6 mb-2">Afghanistan Sanctions and Humanitarian Crisis</h3>
+                        <div className="my-6">
+                            <div className="aspect-w-16 aspect-h-9">
+                                <YouTube
+                                    videoId="Iqvmcz7-e5w"
+                                    opts={opts}
+                                    className="w-full"
+                                />
+                            </div>
+                        </div>
+                        <p className="text-justify">A major criticism of economic sanctions is their impact on civilian populations. Broad-based sanctions, particularly trade embargoes, can lead to severe economic hardship, shortages of essential goods, and deteriorating living conditions. The sanctions on Iraq in the 1990s, for instance, were linked to widespread malnutrition and health crises, prompting calls for targeted, or "smart," sanctions that minimize humanitarian harm. The shift towards asset freezes and travel bans on individuals, rather than comprehensive embargoes, reflects efforts to mitigate these adverse effects.</p>
+                        
+                        <h3 className="text-md font-semibold mt-6 mb-2">Sanctions on Syria and Humanitarian Aid Access</h3>
+                        <p className="mt-4 text-justify">From an economic perspective, sanctions disrupt global trade and financial flows, affecting not only targeted states but also businesses and third-party countries. The imposition of secondary sanctions, which penalize entities that engage with sanctioned parties, creates complex legal and economic challenges.</p>
                         <div className="flex justify-center my-4">
                             <Image 
-                                src="/images/gps.png" 
+                                src="/images/syria.png" 
                                 alt="Global Clock Representation" 
                                 width={250} 
                                 height={200} 
                                 className="rounded-lg shadow-md"
                             />
                         </div>
-                        <p className="text-justify">Whether you’re driving to a new city or tracking a food delivery, Global Positioning System (GPS) is at your service. But did you know GPS wouldn’t be so widely available without international agreements?</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Origins of GPS Technology</h3>
-                        <p className="mt-4 text-justify">GPS was developed by the United States Department of Defense, with key contributions from scientist Bradford Parkinson, who is often called the "father of GPS." Originally designed for military navigation in the 1970s, GPS technology was later opened for civilian use in the 1980s, revolutionizing the way people navigate.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Global Accessibility</h3>
-                        <p className="mt-4 text-justify">Today, GPS relies on a constellation of at least 24 satellites in Earth’s orbit, continuously sending signals that allow receivers to determine precise locations. The International Telecommunications Union (1865) and the 1967 Outer Space Treaty prevent any single country from claiming exclusive rights over satellite locations in geostationary orbit. This ensures equal access to satellite navigation systems, keeping our maps, weather forecasts, and emergency response services functioning worldwide.</p>
+                        <p className="mt-4 text-justify">From an economic perspective, sanctions disrupt global trade and financial flows, affecting not only targeted states but also businesses and third-party countries. The imposition of secondary sanctions, which penalize entities that engage with sanctioned parties, creates complex legal and economic challenges.</p>
+                        <h3 className="text-md font-semibold mt-6 mb-2">Sanctions Amidst the Russia-Ukraine Conflict</h3>
+                        <div className="flex justify-center my-4">
+                            <Image 
+                                src="/images/russia.png" 
+                                alt="Global Clock Representation" 
+                                width={250} 
+                                height={200} 
+                                className="rounded-lg shadow-md"
+                            />
+                        </div>
+                        <p className="mt-4 text-justify">The Russia-Ukraine conflict has intensified debates over the collateral effects of economic sanctions, as Western restrictions on Russian energy exports have triggered broader supply chain disruptions and inflationary pressures worldwide.</p>
+                        <div className="my-6">
+                            <div className="aspect-w-16 aspect-h-9">
+                                <YouTube
+                                    videoId="xCqb55GK7iA"
+                                    opts={opts}
+                                    className="w-full"
+                                />
+                            </div>
+                        </div>
+                        <p className="mt-4 text-justify">International legal bodies, including the United Nations and the European Court of Justice, have played a significant role in shaping the legal landscape of these sanctions. While the UN Security Council has not imposed collective sanctions due to vetoes from Russia and China, regional bodies such as the EU have enacted legally binding restrictions. Additionally, lawsuits challenging the legality of asset freezes and trade bans have emerged in international courts, testing the limits of economic warfare under international law.</p>
+                        <p className="mt-4 text-justify">The impact of these sanctions has been profound, causing economic downturns in Russia while also disrupting global markets, particularly in energy and agriculture. The sanctions have prompted Russia to seek alternative trade alliances, notably with China, India, and other non-Western economies, demonstrating the geopolitical shift induced by economic restrictions.</p>
+                        <p className="mt-4 text-justify">The Russia-Ukraine conflict has intensified debates over the collateral effects of economic sanctions, as Western restrictions on Russian energy exports have triggered broader supply chain disruptions and inflationary pressures worldwide.</p>
                     </section>
                     
                     <section id="section4" className="mb-8">
-                        <h2 className="text-lg font-bold mb-4">Using Apps and Streaming Content Anywhere</h2>
+                        <h2 className="text-lg font-bold mb-4">Enforcement and Evasion Mechanisms</h2>
+                        <p className="mt-4 text-justify">Ensuring compliance with economic sanctions remains a challenge due to the emergence of sophisticated evasion tactics. Targeted states often circumvent restrictions through illicit trade networks, alternative financial systems, and strategic alliances. Iran and North Korea, for example, have employed methods such as cryptocurrency transactions, front companies, and barter trade to bypass financial restrictions.</p>
+                        <h3 className="text-md font-semibold mt-6 mb-2">US Sanctions on Chinese Technology Firms</h3>
                         <div className="flex justify-center my-4">
                             <Image 
-                                src="/images/content.png" 
+                                src="/images/china.png" 
                                 alt="Global Clock Representation" 
                                 width={250} 
                                 height={200} 
                                 className="rounded-lg shadow-md"
                             />
                         </div>
-                        <p className="text-justify">Ever wondered how your favourite apps and streaming services work across different countries? The World Intellectual Property Organization Copyright Treaty (1996) protects digital content, ensuring that creators maintain their rights while allowing users worldwide to enjoy the same software, movies, and music with legal safeguards.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Challenges of Digital Piracy</h3>
-                        <p className="mt-4 text-justify">Before these agreements, digital piracy and unauthorized distribution posed a significant challenge for content creators. International copyright treaties now help companies like Netflix, Spotify, and Apple Music to operate across different jurisdictions while ensuring fair compensation for artists and developers.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Global Accessibility</h3>
-                        <p className="mt-4 text-justify">This is why you can access popular apps and services seamlessly, whether you're at home or traveling abroad.</p>
+                        <p className="text-justify">International legal mechanisms seek to enhance enforcement, with entities like the Financial Action Task Force (FATF) playing a crucial role in combating illicit financial flows linked to sanction evasion. Additionally, international tribunals have addressed cases of sanctions violations, reinforcing the legal consequences of non-compliance. The evolving nature of global finance necessitates continuous adaptation of legal frameworks to prevent sanctions circumvention effectively.</p>
                     </section>
                     
                     <section id="section5" className="mb-8">
-                        <h2 className="text-lg font-bold mb-4">Watching Live Events From Anywhere</h2>
+                        <h2 className="text-lg font-bold mb-4">Trade Wars and Economic Sanctions</h2>
                         <div className="flex justify-center my-4">
                             <Image 
-                                src="/images/live.png" 
+                                src="/images/trade.png" 
                                 alt="Global Clock Representation" 
                                 width={250} 
                                 height={200} 
                                 className="rounded-lg shadow-md"
                             />
                         </div>
-                        <p className="text-justify">Want to watch breaking news, international sports, or live concerts from the other side of the world? You can, thanks to international agreements on satellite communications. The UN General Assembly Resolution 1721 (1961) ensures equal access to the international satellite network, making real-time global broadcasting possible on TVs and mobile devices.</p>
+                        <p className="text-justify">Trade wars, while distinct from economic sanctions, often overlap in their legal and geopolitical implications. Unlike sanctions, which are imposed as punitive measures for violations of international norms, trade wars typically arise from economic disputes over tariffs, subsidies, and market access. The U.S.-China trade war, for example, escalated through a series of retaliatory tariffs that disrupted global supply chains and raised legal questions regarding World Trade Organization (WTO) commitments.</p>
                         
-                        <h3 className="text-md font-semibold mt-6 mb-2">Evolution of Satellite Broadcasting</h3>
-                        <p className="mt-4 text-justify">Before these agreements, live international broadcasts were a challenge due to limited satellite coverage and signal restrictions.</p>
+                        <h3 className="text-md font-semibold mt-6 mb-2">US-China Trade War and WTO Involvement</h3>
+                        <p className="mt-4 text-justify">The trade war between the United States and China, initiated in 2018, saw both countries imposing tariffs worth hundreds of billions of dollars on each other's goods. The WTO played a role in adjudicating disputes arising from these tariffs, ruling in 2020 that certain U.S. tariffs violated international trade rules. Despite this ruling, enforcement challenges highlighted the limitations of the WTO in resolving large-scale economic conflicts.</p>
                         
-                        <h3 className="text-md font-semibold mt-6 mb-2">Impact on Global Connectivity</h3>
-                        <p className="mt-4 text-justify">Today, we take for granted the ability to watch a football match happening thousands of miles away or get real-time updates on global events. Whether it’s the Olympics, international news, or entertainment programs, international law ensures that people across the world stay informed and connected.</p>
+                        <h3 className="text-md font-semibold mt-6 mb-2">EU Trade Disputes with the UK Post-Brexit</h3>
+                        <div className="flex justify-center my-4">
+                            <Image 
+                                src="/images/brexit.png" 
+                                alt="Global Clock Representation" 
+                                width={250} 
+                                height={200} 
+                                className="rounded-lg shadow-md"
+                            />
+                        </div>
+                        <p className="mt-4 text-justify">Following Brexit, trade tensions between the European Union and the United Kingdom intensified, particularly regarding Northern Ireland’s trade arrangements. The role of international law, including dispute resolution mechanisms under the Brexit withdrawal agreement, has been pivotal in mediating trade-related conflicts.</p>
                     </section>
                     
                     <section id="section6" className="mb-8">
-                        <h2 className="text-lg font-bold mb-4">International Law and Global Health: Lessons from Covid-19</h2>
+                        <h2 className="text-lg font-bold mb-4">Global Governance and Future Challenges</h2>
+                        <p className="mt-4 text-justify">The increasing reliance on economic sanctions raises fundamental questions about their role in international governance. As multipolarity intensifies, the fragmentation of sanctioning regimes—where different blocs impose conflicting restrictions—risks undermining global economic stability. The emergence of alternative financial systems, such as China’s Cross-Border Interbank Payment System (CIPS), challenges the dominance of Western-led sanctioning mechanisms.</p>
+                        <p className="mt-4 text-justify">Moreover, the potential for misuse of sanctions for political ends necessitates stronger oversight mechanisms. Calls for greater accountability and judicial review of sanctioning decisions have grown, particularly in cases where individuals or entities challenge their designation.</p>
+                        <h3 className="text-md font-semibold mt-6 mb-2">European Court of Justice and Sanctions on Belarus</h3>
                         <div className="flex justify-center my-4">
                             <Image 
-                                src="/images/covid.png" 
+                                src="/images/court.png" 
                                 alt="Global Clock Representation" 
                                 width={250} 
                                 height={200} 
                                 className="rounded-lg shadow-md"
                             />
                         </div>
-                        <p className="text-justify">The COVID-19 pandemic showed us just how interconnected our world is—and how essential international cooperation is during crises. The World Health Organization (WHO) leads global efforts in managing health emergencies, setting regulations for disease tracking, vaccine distribution, and medical research sharing.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Role of WHO</h3>
-                        <p className="mt-4 text-justify">The WHO plays a crucial role in ensuring that pandemics are controlled through coordinated global efforts. Its International Health Regulations (IHR) require countries to report outbreaks promptly, enabling a faster response to global health threats.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Global Collaboration</h3>
-                        <p className="mt-4 text-justify">The Nagoya Protocol ensures that genetic resources and medical discoveries benefit all nations, fostering global collaboration in developing treatments.</p>
+                        <p className="text-justify">The European Court of Justice has played a notable role in reviewing EU sanctions, ensuring compliance with human rights and due process standards. The Court has intervened in several high-profile cases where sanctioned individuals and entities have challenged restrictive measures. For example, in the case of Rosneft v. Council (2017), the Court upheld EU sanctions against the Russian oil giant, reinforcing the legality of targeted sanctions under EU law. Additionally, the ECJ has been instrumental in overturning sanctions where due process was violated, as seen in the case of Kadi v. Council (2008), where financial restrictions imposed on an individual were lifted due to lack of procedural safeguards. These rulings highlight the ECJ’s role in balancing security concerns with fundamental rights, setting important precedents for sanction-related disputes.</p>
                     </section>
                     
                     <section id="section7" className="mb-8">
-                        <h2 className="text-lg font-bold mb-4">Travel Made Easy</h2>
-                        <div className="flex justify-center my-4">
-                            <Image 
-                                src="/images/travel.png" 
-                                alt="Global Clock Representation" 
-                                width={250} 
-                                height={200} 
-                                className="rounded-lg shadow-md"
-                            />
-                        </div>
-                        <p className="text-justify">Planning a vacation or business trip? Your ability to move across borders seamlessly is largely thanks to international agreements.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Visa-Free Travel</h3>
-                        <p className="mt-4 text-justify">Visa-free travel? That’s the result of bilateral and multilateral agreements between nations. For example, the Schengen Agreement allows free movement across much of Europe, while similar agreements exist in other regions.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Standardized Security Features</h3>
-                        <p className="mt-4 text-justify">The security features in your passport? Regulated by the International Civil Aviation Organization (ICAO) to prevent fraud and ensure smooth border crossings.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Passenger Rights</h3>
-                        <p className="mt-4 text-justify">The Montreal Convention (1999) establishes passenger rights, ensuring compensation for flight delays, lost baggage, and air accidents, protecting travelers across international borders.</p>
-                    </section>
-                    
-                    <section id="section9" className="mb-8">
                         <h2 className="text-lg font-bold mb-4">Conclusion</h2>
-                        <div className="flex justify-center my-4">
-                            <Image 
-                                src="/images/conclusion.png" 
-                                alt="Global Clock Representation" 
-                                width={250} 
-                                height={200} 
-                                className="rounded-lg shadow-md"
-                            />
-                        </div>
-                        <p className="text-justify">We often take for granted how smoothly modern life functions—until something disrupts it. Whether it's setting your clock, following GPS directions, streaming your favorite TV series, or boarding an international flight, international law is the invisible force that keeps our world interconnected.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Impact on Daily Life</h3>
-                        <p className="mt-4 text-justify">These agreements don’t just exist for governments and corporations—they impact you every day, shaping how you work, travel, and stay informed.</p>
-                        
-                        <h3 className="text-md font-semibold mt-6 mb-2">Appreciating International Law</h3>
-                        <p className="mt-4 text-justify">So next time you book a flight, check your GPS, or stream your favorite movie, take a moment to appreciate the role international law plays in making it all possible. It’s the silent architect of a globally connected world, ensuring that life runs as smoothly as possible, no matter where you are.</p>
+                        <p className="text-justify">Economic sanctions remain a powerful yet controversial instrument of international law. While they offer a non-military means of enforcing global norms, their efficacy and legality continue to be scrutinized. The challenge for international law lies in balancing the need for effective enforcement with the imperative of minimizing humanitarian and economic fallout. Future developments will likely shape the contours of sanctioning regimes, determining their legitimacy and role in maintaining international peace and security.</p>
                     </section>
                 </main>
             </div>

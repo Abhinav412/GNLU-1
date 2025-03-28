@@ -45,7 +45,7 @@ const Page = () => {
                             <a href="#section7" className="text-blue-500 hover:underline">Travel Made Easy</a>
                         </li>
                         <li>
-                            <a href="#section9" className="text-blue-500 hover:underline">Conclusion</a>
+                            <a href="#section8" className="text-blue-500 hover:underline">Conclusion</a>
                         </li>
                     </ul>
                 </aside>
@@ -146,7 +146,7 @@ const Page = () => {
                         <p className='mt-4 text-justify'>The Montreal Convention (1999) establishes passenger rights, ensuring compensation for flight delays, lost baggage, and air accidents, protecting travelers across international borders. The Customs Convention on the ATA Carnet (1961) simplifies customs procedures, allowing professionals to carry equipment, samples, and exhibition goods across multiple countries with a single document, facilitating smooth business operations. Meanwhile, the International Air Transport Agreement (IATA Agreement, 1944) regulates airline tariffs and route allocations, promoting fair competition among airlines and maintaining global air connectivity.</p>
                         <p className='mt-4 text-justify'>Furthermore, the ease of booking a flight and checking in at the airport is governed by international aviation laws. Thanks to agreements between airlines and governments, travelers can enjoy seamless connections, baggage transfers, and standardized security procedures, making flying a hassle-free experience.</p>
                     </section>
-                    <section id="section9" className="mb-8">
+                    <section id="section8" className="mb-8">
                         <h2 className='text-lg font-bold mb-4'>Conclusion</h2>
                         <div className="flex justify-center my-4">
                             <Image 
