@@ -36,6 +36,13 @@ export default function Home() {
       router.push("/pil_ai");
     } else if (cards[currentIndex] === "PIL in Daily Life") {
       router.push("/daily_life");
+    } else if (cards[currentIndex]== "PIL & Recent Developments in War") {
+      router.push("/war");
+    }
+    else if (cards[currentIndex] === "PIL & Economic Sanctions") {
+      router.push("/sanctions");
+    } else if (cards[currentIndex] === "PIL & Climate Change") {
+      router.push("/climate_change");
     }
   };
 
@@ -71,7 +78,7 @@ export default function Home() {
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2"
+                className="text-black mt-2 text-justify"
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Artificial Intelligence (AI) transcends geographical boundaries, influencing individual lives and shaping societies worldwide. AI impacts a broad spectrum of activities, from determining credit scores and curating social media feeds to developing advanced weapons and influencing global information systems. Given these widespread applications, AI governance cannot be confined to corporate responsibility alone; it requires active participation from all states.
@@ -87,12 +94,63 @@ AI governance is an inherently complex challenge that necessitates cooperation a
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2"
+                className="text-black mt-2 text-justify"
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Public International Law (PIL) permeates our daily lives in ways often overlooked. From the regulations governing international travel and commerce to the standards that ensure the safety of imported products, PIL establishes frameworks that directly impact individuals worldwide. These laws facilitate cross-border communication, protect intellectual property across national boundaries, and ensure basic human rights regardless of citizenship.
 
 When we use the internet, purchase goods manufactured abroad, or travel internationally, we encounter the practical applications of treaties, conventions, and customary international law. PIL also influences environmental regulations, labor standards, and health protocols that protect our communities. Understanding how these international legal frameworks shape our everyday experiences helps us appreciate the interconnected nature of our global society and the importance of international cooperation.`}
+              </p>
+            </>
+          ) : cards[currentIndex] === "PIL & Recent Developments in War" ? (
+            <>
+              <h1
+                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                onClick={() => router.push("/war")}
+              >
+                {cards[currentIndex]}
+              </h1>
+              <p
+                className="text-black mt-2 text-justify"
+                style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
+              >
+                {`Public International Law (PIL) faces unprecedented challenges in modern warfare contexts. Traditional laws of armed conflict must now address autonomous weapons systems, cyberwarfare, and non-state actors operating across borders. Recent conflicts have highlighted tension between sovereignty principles and humanitarian intervention, while raising questions about proportionality and distinction in asymmetric warfare.
+
+The evolving nature of warfare demands continuous reexamination of legal frameworks established by the Geneva Conventions and customary international law. As technology advances and conflict patterns shift, the international community must adapt PIL to ensure it remains relevant and effective in regulating modern warfare while protecting civilians and maintaining international peace and security.`}
+              </p>
+            </>
+          ) : cards[currentIndex] === "PIL & Economic Sanctions" ? (
+            <>
+              <h1
+                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                onClick={() => router.push("/sanctions")}
+              >
+                {cards[currentIndex]}
+              </h1>
+              <p
+                className="text-black mt-2 text-justify"
+                style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
+              >
+                {`Economic sanctions are among the most powerful tools in global diplomacy—leveraged to uphold international law, deter aggression, and punish human rights violations. Yet their use sits at the crossroads of legal legitimacy, humanitarian consequences, and geopolitical strife. Public International Law (PIL) governs the application of sanctions, from UN Security Council resolutions to unilateral measures, while grappling with critical questions: Do sanctions effectively enforce compliance, or do they inflict undue harm on civilians? Can they coexist with principles of sovereignty and non-intervention?  
+
+Recent conflicts, such as the Russia-Ukraine war and U.S.-Iran tensions, highlight the double-edged nature of sanctions—disrupting economies, reshaping alliances, and sparking legal battles in international courts. Meanwhile, the rise of alternative financial systems and evasion tactics challenges their enforcement. This examination delves into the legal foundations of sanctions, their real-world impact, and the ongoing tension between coercive diplomacy and ethical accountability in a fractured world order.`}
+              </p>
+            </>
+          ) : cards[currentIndex] === "PIL & Climate Change" ? (
+            <>
+              <h1
+                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                onClick={() => router.push("/climate_change")}
+              >
+                {cards[currentIndex]}
+              </h1>
+              <p
+                className="text-black mt-2 text-justify"
+                style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
+              >
+                {`Climate change presents unprecedented challenges to Public International Law frameworks, requiring innovative legal approaches to a truly global crisis. International environmental agreements like the Paris Agreement establish binding commitments, but questions of enforcement, compliance, and differentiated responsibilities continue to challenge the international community. PIL must address complex issues of transboundary pollution, climate migration, and climate justice while balancing development needs with environmental protection.
+
+As climate impacts intensify, legal mechanisms for loss and damage compensation, technology transfer, and equitable burden-sharing become increasingly important. PIL serves as the foundation for international climate governance, providing structures for cooperation, dispute resolution, and progressive development of environmental norms that transcend national boundaries to address this existential global challenge.`}
               </p>
             </>
           ) : (
