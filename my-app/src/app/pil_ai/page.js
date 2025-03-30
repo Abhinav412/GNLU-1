@@ -10,16 +10,16 @@ export default function PilAI() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400">
+      <button 
+        className="absolute top-5 left-5 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+        onClick={() => router.push("/")}
+      >
+        <span className="text-2xl">←</span>
+      </button>
       <h1 className="text-3xl font-bold mb-5 font-serif">
         PIL & AI
       </h1>
-      <p className="text-lg text-center max-w-3xl mb-10">
-        {/* Public Interest Litigation (PIL) and Artificial Intelligence (AI) intersect in fascinating ways.
-        AI technologies are increasingly being used to analyze legal data, predict case outcomes, and
-        assist in drafting legal documents. This page explores the implications of AI in the realm of
-        public interest litigation, including ethical considerations and potential benefits. */}
-      </p>
       <div className="flex gap-5">
         <div
           className="w-[300px] h-[200px] bg-white border border-gray-300 rounded-lg shadow-md flex items-center justify-center text-center cursor-pointer hover:bg-gray-200 transition"

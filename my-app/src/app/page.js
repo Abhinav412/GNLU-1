@@ -36,7 +36,7 @@ export default function Home() {
       router.push("/pil_ai");
     } else if (cards[currentIndex] === "PIL in Daily Life") {
       router.push("/daily_life");
-    } else if (cards[currentIndex]== "PIL & Recent Developments in War") {
+    } else if (cards[currentIndex] === "PIL & Recent Developments in War") {
       router.push("/war");
     }
     else if (cards[currentIndex] === "PIL & Economic Sanctions") {
@@ -45,6 +45,49 @@ export default function Home() {
       router.push("/climate_change");
     }
   };
+
+  const getBoxStyle = () => {
+    switch (currentIndex) {
+      case 0: // PIL & AI
+        return {
+          background: 'rgba(13, 28, 64, 0.85)', // Dark blue with opacity
+          textColor: 'text-gray-100',
+          headingColor: 'text-cyan-300'
+        };
+      case 1: // PIL in Daily Life
+        return {
+          background: 'rgba(13, 28, 64, 0.85)', // Warm brown with opacity
+          textColor: 'text-gray-100',
+          headingColor: 'text-cyan-300'
+        };
+      case 2: // PIL & Recent Developments in War
+        return {
+          background: 'rgba(13, 28, 64, 0.85)', // Dark slate with opacity
+          textColor: 'text-gray-100',
+          headingColor: 'text-cyan-300'
+        };
+      case 3: // PIL & Economic Sanctions
+        return {
+          background: 'rgba(27, 38, 44, 0.85)', // Navy blue with opacity
+          textColor: 'text-gray-100',
+          headingColor: 'text-amber-400'
+        };
+      case 4: // PIL & Climate Change
+        return {
+          background: 'rgba(11, 66, 50, 0.85)', // Dark green with opacity
+          textColor: 'text-gray-200',
+          headingColor: 'text-green-300'
+        };
+      default:
+        return {
+          background: 'rgba(243, 244, 246, 0.8)', // Default light gray
+          textColor: 'text-black',
+          headingColor: 'text-blue-600'
+        };
+    }
+  };
+
+  const boxStyle = getBoxStyle();
 
   return (
     <>
@@ -66,19 +109,24 @@ export default function Home() {
           &#8592;
         </button>
         <div
-          className="w-[1000px] h-[250px] p-5 bg-gray-100 border border-gray-300 rounded-lg shadow-md flex flex-col items-center justify-center text-center cursor-pointer"
-          onClick={handleCardClick} // Add click handler
+          className={`w-[1000px] h-[250px] p-5 border border-gray-700 rounded-lg shadow-lg flex flex-col items-center justify-center text-center cursor-pointer ${boxStyle.textColor}`}
+          onClick={handleCardClick}
+          style={{ 
+            background: boxStyle.background,
+            backdropFilter: 'blur(3px)',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.2)'
+          }}
         >
           {cards[currentIndex] === "PIL & AI" ? (
             <>
               <h1
-                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                className={`text-xl font-bold underline cursor-pointer ${boxStyle.headingColor}`}
                 onClick={() => router.push("/pil_ai")}
               >
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2 text-justify"
+                className={`mt-2 text-justify ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Artificial Intelligence (AI) transcends geographical boundaries, influencing individual lives and shaping societies worldwide. AI impacts a broad spectrum of activities, from determining credit scores and curating social media feeds to developing advanced weapons and influencing global information systems. Given these widespread applications, AI governance cannot be confined to corporate responsibility alone; it requires active participation from all states.
@@ -88,13 +136,13 @@ AI governance is an inherently complex challenge that necessitates cooperation a
           ) : cards[currentIndex] === "PIL in Daily Life" ? (
             <>
               <h1
-                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                className={`text-xl font-bold underline cursor-pointer ${boxStyle.headingColor}`}
                 onClick={() => router.push("/daily_life")}
               >
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2 text-justify"
+                className={`mt-2 text-justify ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Public International Law (PIL) permeates our daily lives in ways often overlooked. From the regulations governing international travel and commerce to the standards that ensure the safety of imported products, PIL establishes frameworks that directly impact individuals worldwide. These laws facilitate cross-border communication, protect intellectual property across national boundaries, and ensure basic human rights regardless of citizenship.
@@ -105,13 +153,13 @@ When we use the internet, purchase goods manufactured abroad, or travel internat
           ) : cards[currentIndex] === "PIL & Recent Developments in War" ? (
             <>
               <h1
-                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                className={`text-xl font-bold underline cursor-pointer ${boxStyle.headingColor}`}
                 onClick={() => router.push("/war")}
               >
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2 text-justify"
+                className={`mt-2 text-justify ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Public International Law (PIL) faces unprecedented challenges in modern warfare contexts. Traditional laws of armed conflict must now address autonomous weapons systems, cyberwarfare, and non-state actors operating across borders. Recent conflicts have highlighted tension between sovereignty principles and humanitarian intervention, while raising questions about proportionality and distinction in asymmetric warfare.
@@ -122,13 +170,13 @@ The evolving nature of warfare demands continuous reexamination of legal framewo
           ) : cards[currentIndex] === "PIL & Economic Sanctions" ? (
             <>
               <h1
-                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                className={`text-xl font-bold underline cursor-pointer ${boxStyle.headingColor}`}
                 onClick={() => router.push("/sanctions")}
               >
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2 text-justify"
+                className={`mt-2 text-justify ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Economic sanctions are among the most powerful tools in global diplomacy—leveraged to uphold international law, deter aggression, and punish human rights violations. Yet their use sits at the crossroads of legal legitimacy, humanitarian consequences, and geopolitical strife. Public International Law (PIL) governs the application of sanctions, from UN Security Council resolutions to unilateral measures, while grappling with critical questions: Do sanctions effectively enforce compliance, or do they inflict undue harm on civilians? Can they coexist with principles of sovereignty and non-intervention?  
@@ -139,13 +187,13 @@ Recent conflicts, such as the Russia-Ukraine war and U.S.-Iran tensions, highlig
           ) : cards[currentIndex] === "PIL & Climate Change" ? (
             <>
               <h1
-                className="text-xl font-bold text-blue-600 underline cursor-pointer"
+                className={`text-xl font-bold underline cursor-pointer ${boxStyle.headingColor}`}
                 onClick={() => router.push("/climate_change")}
               >
                 {cards[currentIndex]}
               </h1>
               <p
-                className="text-black mt-2 text-justify"
+                className={`mt-2 text-justify ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Climate change presents unprecedented challenges to Public International Law frameworks, requiring innovative legal approaches to a truly global crisis. International environmental agreements like the Paris Agreement establish binding commitments, but questions of enforcement, compliance, and differentiated responsibilities continue to challenge the international community. PIL must address complex issues of transboundary pollution, climate migration, and climate justice while balancing development needs with environmental protection.
@@ -154,7 +202,7 @@ As climate impacts intensify, legal mechanisms for loss and damage compensation,
               </p>
             </>
           ) : (
-            <h1 className="text-xl font-bold text-black">{cards[currentIndex]}</h1>
+            <h1 className={`text-xl font-bold ${boxStyle.headingColor}`}>{cards[currentIndex]}</h1>
           )}
         </div>
         <button

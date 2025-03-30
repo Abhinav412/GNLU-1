@@ -16,7 +16,7 @@ const SourcesPage = () => {
             <div className="w-full p-4 flex justify-end items-center mb-6">
                 <button 
                     onClick={() => router.push('/sanctions/')}
-                    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 absolute right-4"
+                    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 absolute right-4 top-8"
                 >
                     Back to Main
                 </button>
@@ -36,19 +36,30 @@ const SourcesPage = () => {
                             fontSize: '20px',
                             color: '#2d2b52'
                         }}>
-                            <li style={{ marginBottom: '8px', textAlign: 'left' }}>Source 1: AMERICAN SOCIETY OF INTERNATIONAL LAW, INTERNATIONAL LAW 100 WAYS IT SHAPES OUR LIVES</li>
-                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 2: INTERNATIONAL LAW IN EVERYDAY LIFE: MORE RELEVANT THAN YOU THINK - GLOBAL NEW LIGHT OF MYANMAR</li>
-                            <li style={{ marginBottom: '16px', textAlign: 'left' }}>Link: <a href="https://www.gnlm.com.mm/international-law-in-everyday-life-more-relevant-than-you-think/"
-                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.gnlm.com.mm/international-law-in-everyday-life-more-relevant-than-you-think/</a></li>
-                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 3: INTERNATIONAL LAW IN EVERYDAY LIFE: MORE RELEVANT THAN YOU THINK | STATE ADMINSTRATION COUNCIL</li>
-                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}>Link: <a href="https://sacministry.gov.mm/en/article/3759"
-                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://sacministry.gov.mm/en/article/3759</a></li>
-                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 4:  WAYS INTERNATIONAL LAW SHAPE OUR LIVES AND THE PRINCIPLE RESPONSIBILITY TO PROTECT (R2P) UNIVERSITY OF ECONOMICS AND FINANCE</li>
-                            <li style={{ marginBottom: '16px', textAlign: 'left' }}>Link: <a href="https://www.uef.edu.vn/fir/academic-activities/webinar-ways-international-law-shape-our-lives-and-the-principle-responsibility-to-protect-r2p-14933"
-                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.uef.edu.vn/fir/academic-activities/webinar-ways-international-law-shape-our-lives-and-the-principle-responsibility-to-protect-r2p-14933</a></li>
-                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 5: INTERNATIONAL LAW: 50 WAYS IT HARMS OUR LIVES</li>
-                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}>Link: <a href="https://www.law.nyu.edu/sites/default/files/ECM_PRO_065322.pdf"
-                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.law.nyu.edu/sites/default/files/ECM_PRO_065322.pdf</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'left' }}>Source 1: United Nations Charter, Art. 41, No. 1, Acts of the United Nations, 1945 (UN).</li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 2: (International Court of Justice), <a href="https://www.icj-cij.org/case/164" style={{ color: '#0066cc', textDecoration: 'underline' }}>https://www.icj-cij.org/case/164</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'left' }}>Source 3: (Human Rights Watch), Economic Causes of Afghanistan's Humanitarian Crisis, HUMAN RIGHTS WATCH (Aug. 4, 2022), <a href="https://www.hrw.org/news/2022/08/04/economic-causes-afghanistans-humanitarian-crisis" style={{color:'#0066cc', textDecoration:'underline'}}>https://www.hrw.org/news/2022/08/04/economic-causes-afghanistans-humanitarian-crisis</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'left' }}>Source 4: (European Parliamentary Research Service), Briefing: EPRS_BRI(2023)749765, EUROPEAN PARLIAMENT (2023)</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'left' }}><a href="https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2023)749765"
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2023)749765</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 5: (BBC News), Ukraine Conflict: Moscow Says Troops Pulling Back After Drills, BBC (Jan. 18, 2022),</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}><a href="https://www.bbc.com/news/world-europe-60125659"
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.bbc.com/news/world-europe-60125659</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 6: (Alan Rappeport), U.S. Treasury Imposes New Sanctions on Chinese Entities, N.Y. TIMES (Jan. 3, 2025),</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}><a href="https://www.nytimes.com/2025/01/03/us/politics/treasury-chinese-sanctions.html"
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.nytimes.com/2025/01/03/us/politics/treasury-chinese-sanctions.html</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 7: (BBC News), The Impact of Climate Change on Global Food Security, BBC (Mar. 24, 2025),</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}><a href="https://www.bbc.com/news/articles/c4gmd3g2nzqo"
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.bbc.com/news/articles/c4gmd3g2nzqo</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 8: (World Trade Organization), WTO Staff Working Paper ERSD-2020-04, WTO (2020),</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}><a href="https://www.wto.org/english/res_e/reser_e/ersd202004_e.htm"
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.wto.org/english/res_e/reser_e/ersd202004_e.htm</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 9: (World Trade Organization), Dispute Settlement Archive: United Kingdom, WTO,</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}><a href="https://www.wto.org/english/news_e/archive_e/country_subj_arc_e.htm?country1=GBR&subject1=DISP "
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.wto.org/english/news_e/archive_e/country_subj_arc_e.htm?country1=GBR&subject1=DISP</a></li>
+                            <li style={{ marginBottom: '8px', textAlign: 'justify' }}>Source 10: (European Union), Sanctions Map, EUROPEAN UNION,</li>
+                            <li style={{ marginBottom: '16px', textAlign: 'justify' }}><a href="https://www.sanctionsmap.eu/"
+                            target="_blank" rel="noopender noreferrer" style={{color:'#0066cc',textDecoration: 'underline'}}>https://www.sanctionsmap.eu/</a></li>
                         </ul>
                     </div>
                 </>

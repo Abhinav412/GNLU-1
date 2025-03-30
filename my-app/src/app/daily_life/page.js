@@ -11,6 +11,12 @@ export default function DailyLife() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-blue-300 via-purple-300 to-pink-300">
+      <button 
+        className="absolute top-5 left-5 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+        onClick={() => router.push("/")}
+      >
+        <span className="text-2xl">←</span>
+      </button>
       <h1 className="text-3xl font-bold mb-5 font-serif">
         Daily Life
       </h1>
