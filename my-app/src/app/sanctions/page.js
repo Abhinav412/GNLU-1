@@ -39,12 +39,6 @@ export default function PilAI() {
         >
           <h2 className="text-lg font-bold">Sources</h2>
         </div>
-        <div
-          className="w-[300px] h-[200px] bg-white border border-gray-300 rounded-lg shadow-md flex items-center justify-center text-center cursor-pointer hover:bg-gray-200 transition"
-          onClick={() => handleCardClick("/sanctions/Documentary")}
-        >
-          <h2 className="text-lg font-bold">Documentary</h2>
-        </div>
       </div>
     </div>
   );
