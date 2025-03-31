@@ -18,7 +18,7 @@ export default function DailyLife() {
         <span className="text-2xl">←</span>
       </button>
       <h1 className="text-3xl font-bold mb-5 font-serif">
-        Daily Life
+        PIL in Daily Life
       </h1>
       <div className="flex gap-5">
         <div
