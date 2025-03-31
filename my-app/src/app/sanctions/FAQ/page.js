@@ -55,7 +55,7 @@ export default function FAQPage() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 py-8">
             <div className="max-w-600px mx-auto p-4 mb-4 flex relative">
-                <h1 className="text-2xl font-bold mx-auto">Sanctions and International Law: Key Takeaways</h1>
+                <h1 className="text-2xl font-bold mx-auto">Frequently Asked Questions</h1>
                 <button 
                     onClick={() => router.push('/sanctions/')}
                     className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 absolute right-4"
