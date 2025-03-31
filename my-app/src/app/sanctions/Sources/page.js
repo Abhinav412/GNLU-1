@@ -12,7 +12,7 @@ const SourcesPage = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-300 via-purple-300 to-pink-300">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400">
             <div className="w-full p-4 flex justify-end items-center mb-6">
                 <button 
                     onClick={() => router.push('/sanctions/')}

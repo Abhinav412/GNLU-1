@@ -1,8 +1,11 @@
 'use client'; // Using client component for interactive elements
 
 import React from 'react';
+import { useRouter } from 'next/navigation'; // Import useRouter hook
 
 export default function Documentary() {
+  const router = useRouter(); // Initialize router
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400">
       <div className="px-8 py-8 max-w-6xl mx-auto">

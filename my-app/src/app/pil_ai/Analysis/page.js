@@ -1,12 +1,23 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const Page = () => {
     const router = useRouter();
     
+    // Disable body scrolling when component mounts
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        
+        // Re-enable scrolling when component unmounts
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
+    
     return (
-        <div className="min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+        <div className="h-screen w-full flex flex-col bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 overflow-hidden">
             <div className="w-full p-4 bg-white bg-opacity-10 flex justify-between items-center">
                 <h1 className="text-2xl font-bold">Analysis</h1>
                 <button 
@@ -17,9 +28,9 @@ const Page = () => {
                 </button>
             </div>
             
-            <div className="flex bg-white">
+            <div className="flex flex-1 bg-white overflow-hidden">
                 {/* Table of Contents */}
-                <aside className="w-1/4 p-4 border-r border-gray-300">
+                <aside className="w-1/4 p-4 border-r border-gray-300 overflow-y-auto">
                     <h2 className="text-lg font-bold mb-4">Table of contents</h2>
                     <ul className="space-y-2">
                         <li>
@@ -53,7 +64,7 @@ const Page = () => {
                 </aside>
 
                 {/* Main Content */}
-                <main className="w-3/4 p-4 max-h-screen overflow-y-auto">
+                <main className="w-3/4 p-4 overflow-y-auto">
                     <section id="section1" className="mb-8">
                         <h1 className="text-xl font-bold mb-4">The Global Impact of AI and the need for Governance</h1>
                         <p className="mb-4 text-justify">Artificial Intelligence (AI) transcends geographical boundaries, 

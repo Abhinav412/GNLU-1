@@ -53,7 +53,7 @@ export default function FAQPage() {
     const router = useRouter();
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-blue-300 via-purple-300 to-pink-300 py-8">
+        <div className="min-h-screen bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 py-8">
             <div className="max-w-600px mx-auto p-4 mb-4 flex relative">
                 <h1 className="text-2xl font-bold mx-auto">Sanctions and International Law: Key Takeaways</h1>
                 <button 

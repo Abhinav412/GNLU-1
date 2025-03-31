@@ -18,9 +18,9 @@ const Page = () => {
                 </button>
             </div>
             
-            <div className="flex bg-white">
+            <div className="flex bg-white h-[calc(100vh-72px)]">
                 {/* Table of Contents */}
-                <aside className="w-1/4 p-4 border-r border-gray-300">
+                <aside className="w-1/4 p-4 border-r border-gray-300 overflow-y-auto">
                     <h2 className="text-lg font-bold mb-4">Table of contents</h2>
                     <ul className="space-y-2">
                         <li>
@@ -51,7 +51,7 @@ const Page = () => {
                 </aside>
 
                 {/* Main Content */}
-                <main className="w-3/4 p-4 max-h-screen overflow-y-auto">
+                <main className="w-3/4 p-4 overflow-y-auto">
                     <section id="section1" className="mb-8">
                         <h1 className="text-xl font-bold mb-4">How International Law Shapes Your Everyday Life</h1>
                         <p className="mb-4 text-justify">We often think of international law as something reserved for diplomats, courtrooms, and treaties. But did you know it plays a vital role in your daily routine? From telling time to traveling the world, global agreements ensure smooth coordination between nations—making modern life more convenient and connected than ever.</p>   
