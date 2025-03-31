@@ -109,7 +109,7 @@ export default function Home() {
           &#8592;
         </button>
         <div
-          className={`w-[1000px] h-[250px] p-5 border border-gray-700 rounded-lg shadow-lg flex flex-col items-center justify-center text-center cursor-pointer ${boxStyle.textColor}`}
+          className={`w-[1000px] h-[300px] p-5 border border-gray-700 rounded-lg shadow-lg flex flex-col items-center justify-center text-center cursor-pointer ${boxStyle.textColor}`}
           onClick={handleCardClick}
           style={{ 
             background: boxStyle.background,
@@ -126,7 +126,7 @@ export default function Home() {
                 {cards[currentIndex]}
               </h1>
               <p
-                className={`mt-2 text-justify ${boxStyle.textColor}`}
+                className={`mt-2 text-justify text-sm ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Artificial Intelligence (AI) transcends geographical boundaries, influencing individual lives and shaping societies worldwide. AI impacts a broad spectrum of activities, from determining credit scores and curating social media feeds to developing advanced weapons and influencing global information systems. Given these widespread applications, AI governance cannot be confined to corporate responsibility alone; it requires active participation from all states.
@@ -142,7 +142,7 @@ AI governance is an inherently complex challenge that necessitates cooperation a
                 {cards[currentIndex]}
               </h1>
               <p
-                className={`mt-2 text-justify ${boxStyle.textColor}`}
+                className={`mt-2 text-justify text-sm ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Public International Law (PIL) permeates our daily lives in ways often overlooked. From the regulations governing international travel and commerce to the standards that ensure the safety of imported products, PIL establishes frameworks that directly impact individuals worldwide. These laws facilitate cross-border communication, protect intellectual property across national boundaries, and ensure basic human rights regardless of citizenship.
@@ -159,7 +159,7 @@ When we use the internet, purchase goods manufactured abroad, or travel internat
                 {cards[currentIndex]}
               </h1>
               <p
-                className={`mt-2 text-justify ${boxStyle.textColor}`}
+                className={`mt-2 text-justify text-sm ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Public International Law (PIL) regulates the conduct of states in war and peace, defining the legal framework for the use of force, self-defence, and the protection of human rights. Rooted in treaties like the UN Charter and customary international law, it aims to balance state sovereignty with global security and humanitarian principles. The right to self-defence, established under Article 51 of the UN Charter, allows states to respond to armed attacks, but its scope remains contested, especially in cases involving occupation and asymmetric warfare. Additionally, principles such as necessity, proportionality, and distinction in armed conflicts shape the legality of military actions, influencing global responses to war.  
@@ -176,7 +176,7 @@ Recent conflicts have tested the resilience of international law, raising critic
                 {cards[currentIndex]}
               </h1>
               <p
-                className={`mt-2 text-justify ${boxStyle.textColor}`}
+                className={`mt-2 text-justify text-sm ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Economic sanctions are among the most powerful tools in global diplomacy—leveraged to uphold international law, deter aggression, and punish human rights violations. Yet their use sits at the crossroads of legal legitimacy, humanitarian consequences, and geopolitical strife. Public International Law (PIL) governs the application of sanctions, from UN Security Council resolutions to unilateral measures, while grappling with critical questions: Do sanctions effectively enforce compliance, or do they inflict undue harm on civilians? Can they coexist with principles of sovereignty and non-intervention?  
@@ -193,7 +193,7 @@ Recent conflicts, such as the Russia-Ukraine war and U.S.-Iran tensions, highlig
                 {cards[currentIndex]}
               </h1>
               <p
-                className={`mt-2 text-justify ${boxStyle.textColor}`}
+                className={`mt-2 text-justify text-sm ${boxStyle.textColor}`}
                 style={{ fontFamily: "'Apple Color Emoji', sans-serif" }}
               >
                 {`Climate change presents unprecedented challenges to Public International Law frameworks, requiring innovative legal approaches to a truly global crisis. International environmental agreements like the Paris Agreement establish binding commitments, but questions of enforcement, compliance, and differentiated responsibilities continue to challenge the international community. PIL must address complex issues of transboundary pollution, climate migration, and climate justice while balancing development needs with environmental protection.
