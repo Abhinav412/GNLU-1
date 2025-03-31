@@ -22,13 +22,13 @@ export default function DailyLife() {
       </h1>
       <div className="flex gap-5">
         <div
-          className="w-[300px] h-[200px] bg-white border border-gray-300 rounded-lg shadow-md flex items-center justify-center text-center cursor-pointer hover:bg-gray-200 transition"
+          className="w-[300px] h-[200px] bg-white/70 backdrop-blur-sm border border-gray-300 rounded-lg shadow-md flex items-center justify-center text-center cursor-pointer hover:bg-white/90 transition"
           onClick={() => handleCardClick("/daily_life/Analysis")}
         >
           <h2 className="text-lg font-bold">Analysis</h2>
         </div>
         <div
-          className="w-[300px] h-[200px] bg-white border border-gray-300 rounded-lg shadow-md flex items-center justify-center text-center cursor-pointer hover:bg-gray-200 transition"
+          className="w-[300px] h-[200px] bg-white/70 backdrop-blur-sm border border-gray-300 rounded-lg shadow-md flex items-center justify-center text-center cursor-pointer hover:bg-white/90 transition"
           onClick={() => handleCardClick("/daily_life/Sources")}
         >
           <h2 className="text-lg font-bold">Sources</h2>
