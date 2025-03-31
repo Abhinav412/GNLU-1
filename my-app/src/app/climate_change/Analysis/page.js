@@ -7,7 +7,7 @@ const Page = () => {
     const router = useRouter();
     
     return (
-        <div className="h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex flex-col overflow-hidden">
+        <div className="h-screen bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 flex flex-col overflow-hidden">
             <div className="w-full p-4 bg-white bg-opacity-10 flex justify-between items-center">
                 <h1 className="text-2xl font-bold">Analysis</h1>
                 <button 

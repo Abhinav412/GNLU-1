@@ -10,7 +10,7 @@ export default function PilAI() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 relative">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 relative">
       <button 
         className="absolute top-5 left-5 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
         onClick={() => router.push("/")}
